@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+
+<body>
+  <div class="container all_letters">
+    <div class="jumbotron text-center HeadBox">
+      <h1 class="Main_Title">Mission to Mars</h1>
+      <p><a class="btn btn-warning btn-lg ModButton" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Latest Mars News</h2>
+        <b><p>{{ pl_data.Mars_News.Title }}</p></b>
+        <p>{{ pl_data.Mars_News.SubHead }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+          <h2>Featured Mars Image</h2>
+          <div>
+            <img src="{{ pl_data.Mars_Images }}" height="400" alt="mars_image">
+          </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+          <div class="card text-white w-100 weather_card">
+              <div class="card-body">
+                <h5 class="card-title">Current Weather on Mars</h5>
+                <p class="card-text">{{ pl_data.Mars_Weather }}</p>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div>
+            <b><h5>Mars Facts</h5></b>
+            {{ pl_data.Mars_Facts|safe }}
+          </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      {% for item in pl_data.Mars_Hem %}
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="{{ item.img_url }}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>  
+</body>
+
+</html>
+

@@ -1,0 +1,32 @@
+.all_letters{
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+
+.HeadBox {
+    background-color: #9D6046;
+    color: white;
+}
+
+.ModButton {
+    background-color: orange;
+    color: white;
+}
+
+.Main_Title {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.weather_card {
+    background-color: #9D6046;
+    margin-top: 40px;
+}
+
+.table_fmt  {
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    text-align: center;
+}

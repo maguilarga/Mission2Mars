@@ -1,0 +1,4 @@
+# ignore the file with the API keys
+.ipynb_checkpoints
+__pycache__
+mission_to_marsORIG.ipynb
