@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 from splinter import Browser
 import pandas as pd
+import time
 
 
 def scrape():
@@ -47,10 +48,13 @@ def scrape():
     html = browser.html
     soup = bs(html, 'html.parser')
 
+    # Navigate to full image page
+    browser.click_link_by_partial_text('FULL IMAGE')
+
     # Read the page
     html = browser.html
     # wait for the page to be fully loaded
-    time.sleep(2)
+    time.sleep(3)
     soup = bs(html, 'html.parser')
     # Navigate to more info page
     browser.click_link_by_partial_text('more info')
