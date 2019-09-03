@@ -30,8 +30,8 @@ Download "Mission2Mars" GitHub repo to a local directory
 
 ## Contributing
 
-Thank you to SrackOverflow who cleared many doubts and provided code snippets
-Thank you to John Jawkins who answered my question and unstucked me 
+* Thank you to SrackOverflow who cleared many doubts and provided code snippets
+* Thank you to John Hawkins who answered my question and unstucked me 
 
 ## Versioning
 
