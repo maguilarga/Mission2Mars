@@ -1,5 +1,5 @@
 # Mission2Mars
-Mission2Mars Mission2Mars a web site with information about Mars collected from various sites (NASA, twitter, space-fact.com and astrology.usgs.gov). Every time the users requests it, the information is refreshed. This projects was created to practice Beautiful Soup scraping, Splinter, Mongo DB, Flask and Jinja.
+Mission2Mars is a web site with information about Mars collected from various sites (NASA, twitter, space-fact.com and astrology.usgs.gov). Every time the user requests it, the information is refreshed. This projects was created to practice Beautiful Soup scraping, Splinter, Mongo DB, Flask and Jinja.
 
 ### Prerequisites
 
