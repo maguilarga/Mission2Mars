@@ -24,8 +24,8 @@ Download "Mission2Mars" GitHub repo to a local directory
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) 
 * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) 
 * [Splinter](https://splinter.readthedocs.io/en/latest/) 
-* [Jinja] (https://jinja.palletsprojects.com/en/2.10.x/) 
-* [MongoDB] (https://docs.mongodb.com/) 
+* [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) 
+* [MongoDB](https://docs.mongodb.com/) 
 
 
 ## Contributing
